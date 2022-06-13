@@ -1,0 +1,284 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,900;1,500&display=swap");
+/* END FONTS */
+
+/* SCROLLBAR */
+
+*::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.6em;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color:black;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* END SCROLLBAR */
+
+/* RESET STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+/* END RESET STYLES */
+
+/* MEDIA QUERYS */
+
+/* CHANGE EACH CARD ELEMENT WIDTH WHEN WIDTH OF THE SCREEN IS 950PX OR HIGHER*/
+
+@media only screen and (min-width: 950px) {
+  .card--section {
+    width: 22.6vw;
+  }
+}
+
+/* CHANGE EACH CARD ELEMENT WIDTH WHEN WIDTH OF THE SCREEN IS 550PX OR LOWER*/
+
+@media only screen and (max-width: 550px) {
+  .card--section {
+    width: 43.5vw;
+  }
+}
+
+/* CHANGE FONT SIZE OF DESCRIPTION OF EACH CARD WHEN THE WIDTH OF THE SCREEN IS 550PX OR LOWER*/
+
+@media only screen and (max-width: 550px) {
+  .card--section span {
+    font-size: 3vw;
+  }
+}
+
+/* END MEDIA QUERYS */
+
+/* ANIMATIONS */
+.card--image:hover {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+.card--image:not(:hover) {
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+/* END ANIMATIONS */
+
+/* NAV */
+.nav--logo {
+  width: auto;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+}
+
+.main--nav {
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  height: 10vh;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  padding: 10px;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.nav--Title {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-size: calc(1vh + 30px);
+  display: flex;
+  align-items: center;
+}
+
+/* END NAV */
+
+/* HERO */
+
+.hero--title {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-size: calc(40px + 3vw);
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+.hero--para {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: calc(15px + 3vw);
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+/* END HERO */
+
+/* CARDS */
+.card--image {
+  border-radius: 20px;
+  width: auto;
+  opacity: 0.8;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.card--stats {
+  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.card--section span {
+  margin-right: 0.2em;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: small;
+}
+
+/* ONE CARD ELEMENT*/
+.card--section {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  position: relative;
+  max-width: 300px;
+}
+
+/* CONTAINER FOR AL THE CARDS */
+.cards-list {
+  width: 95%;
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 10px 30px 10px;
+  gap: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.star--image {
+  width: 20px;
+}
+
+.card--title {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-size: larger;
+  margin: 10px 0 0 0;
+}
+
+.card--subtitle {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+
+/* CONDITIONED LABEL */
+.available {
+  font-family: "Poppins";
+  font-weight: 900;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 2vh;
+  z-index: 1;
+}
+
+/* END CARDS */
+
+/* SLIDESHOW */
+
+.photoFrame {
+  margin: 25px auto;
+  width: 60vw;
+  height: 40vw;
+  min-width: 350px;
+  min-height: 350px;
+  border-radius: 10px;
+  display: flex;
+  overflow: auto;
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.allPhotos {
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideshowImage {
+  display: block;
+  max-width: 100%;
+  max-height: 94%;
+  margin: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.seeLocation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0 0 0;
+}
+
+.locationLogo{
+  width: 2.5vh;
+}
+
+.photoSlideshowTitle{
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 2vh;
+}
+
+/* REMOVE LINK STYLE */
+.linkLocation:visited{
+  color: black;
+}
+
+.linkLocation:link{
+  color: black;
+}
+
+.linkLocation{
+  text-decoration: none;
+}
+/* END REMOVE LINK STYLE */
+
+/* END SLIDESHOW */
